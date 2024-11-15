@@ -1,26 +1,38 @@
 <template>
-  <UHorizontalNavigation :links="links" class="border-b border-gray-200 dark:border-gray-800" />
+	<UHorizontalNavigation :links="links">
+		<template #default="{ link }">
+			<span v-if="link.label === 'EducaMonitor'" class="no-hover-text">
+				<img src="../assets/images/logo.svg">
+			</span>
+			<span v-else class="">{{ link.label }}</span>
+		</template>
+	</UHorizontalNavigation>
+	<UDivider />
 </template>
   
-<script setup lang="ts">
-const links = [{
-  label: 'Profile',
-  avatar: {
-    src: 'https://avatars.githubusercontent.com/u/739984?v=4'
-  },
-  badge: 100
-}, {
-  label: 'Installation',
-  icon: 'i-heroicons-home',
-  to: '/getting-started/installation'
-}, {
-  label: 'Horizontal Navigation',
-  icon: 'i-heroicons-chart-bar',
-  to: '/components/horizontal-navigation'
-}, {
-  label: 'Command Palette',
-  icon: 'i-heroicons-command-line',
-  to: '/components/command-palette'
-}]
+<script setup>
+const links = [
+	[
+		{
+			label: "EducaMonitor",
+		},
+	],
+	[ {
+		label: "Dashboard",
+		icon:  "i-heroicons-chart-bar",
+		to:    "/dashboard",
+	}, {
+		label: "Notifications",
+		icon:  "i-heroicons-outline-bell-alert",
+		to:    "/notifications",
+	}, {
+		label: "Comportamento do Estudante",
+		icon:  "i-heroicons-outline-document-text",
+		to:    "/student-behavior",
+	} ], [
+		{
+			label: "Logout",
+			icon:  "i-heroicons-outline-arrow-right-on-rectangle",
+		},
+	] ];
 </script>
-

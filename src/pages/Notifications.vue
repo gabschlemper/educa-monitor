@@ -1,5 +1,5 @@
 <template>
-	<div>my login</div>
+	<div>my notification</div>
 </template>
 
 <script setup></script>
