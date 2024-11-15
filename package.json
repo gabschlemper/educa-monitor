@@ -12,9 +12,12 @@
   "dependencies": {
     "@nuxt/eslint": "^0.6.1",
     "@nuxt/ui": "^2.19.2",
+    "@pinia/nuxt": "^0.7.0",
+    "@vue/compiler-sfc": "^3.5.13",
     "apexcharts": "^4.0.0",
     "nuxt": "^3.14.159",
-    "vue": "latest",
+    "pinia": "^2.2.6",
+    "vue": "^3.5.13",
     "vue-router": "latest",
     "vue3-apexcharts": "^1.7.0"
   },

@@ -4,7 +4,7 @@
 
 <script setup>
 definePageMeta({
-	alias: "/student-behavior",
+  alias: "/student-behavior",
 });
 
 </script>
