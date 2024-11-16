@@ -46,26 +46,17 @@ const chartOptions = {
   xaxis: {
     categories: [ "Jan", "Fev", "Mar", "Abr", "Mai", "Jun" ],
     title:      {
-      text:  "Meses",
-      style: {
-        color: "#fdfdfd",
-      },
+      text: "Meses",
     },
   },
   yaxis: {
     title: {
-      text:  "Número de Incidentes",
-      style: {
-        color: "#fdfdfd",
-      },
+      text: "Número de Incidentes",
     },
   },
   title: {
     text:  "Visão Geral de Incidentes",
     align: "center",
-    style: {
-      color: "#fdfdfd",
-    },
   },
   tooltip: {
     theme: true,
@@ -73,11 +64,6 @@ const chartOptions = {
   },
   fill: {
     opacity: 0.4,
-  },
-  legend: {
-    labels: {
-      colors: [ "#cdcdcd", "#cdcdcd", "#cdcdcd", "#cdcdcd", "#cdcdcd" ],
-    },
   },
 };
 </script>
