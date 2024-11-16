@@ -1,5 +1,5 @@
 <template>
-	<UContainer class="flex justify-between items-center">
+	<div class="flex justify-between items-center mx-8">
 		<div>
 			<img src="../assets/images/logo.svg">
 		</div>
@@ -13,7 +13,7 @@
 		>
 			<UAvatar src="https://avatars.githubusercontent.com/u/739984?v=4" />
 		</UDropdown>
-	</UContainer>
+	</div>
 	<UDivider />
 </template>
   

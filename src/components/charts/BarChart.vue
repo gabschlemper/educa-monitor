@@ -40,24 +40,44 @@ const chartOptions = {
     width:  2,
     colors: [ "transparent" ],
   },
+  grid: {
+    borderColor: "#373D3F",
+  },
   xaxis: {
     categories: [ "Jan", "Fev", "Mar", "Abr", "Mai", "Jun" ],
     title:      {
-      text: "Meses",
+      text:  "Meses",
+      style: {
+        color: "#fdfdfd",
+      },
     },
   },
   yaxis: {
     title: {
-      text: "Número de Incidentes",
+      text:  "Número de Incidentes",
+      style: {
+        color: "#fdfdfd",
+      },
     },
   },
   title: {
     text:  "Visão Geral de Incidentes",
     align: "center",
+    style: {
+      color: "#fdfdfd",
+    },
   },
-  color: "#f00",
+  tooltip: {
+    theme: true,
+    fixed: true,
+  },
+  fill: {
+    opacity: 0.4,
+  },
+  legend: {
+    labels: {
+      colors: [ "#cdcdcd", "#cdcdcd", "#cdcdcd", "#cdcdcd", "#cdcdcd" ],
+    },
+  },
 };
 </script>
-
-<style scoped>
-</style>

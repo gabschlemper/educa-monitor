@@ -29,24 +29,49 @@ const chartOptions = {
   stroke: {
     curve: "smooth",
     width: 3,
+
   },
   markers: {
     size: 5,
   },
+  grid: {
+    borderColor: "#373D3F",
+  },
   xaxis: {
     categories: [ "Jan", "Fev", "Mar", "Abr", "Mai", "Jun" ],
     title:      {
-      text: "Meses",
+      text:  "Meses",
+      style: {
+        color: "#fdfdfd",
+      },
     },
   },
   yaxis: {
     title: {
-      text: "Métricas de performance (%)",
+      text:  "Métricas de performance (%)",
+      style: {
+        color: "#fdfdfd",
+      },
     },
   },
   title: {
-    text:  "Métricas de Performance do Estudante",
+    text:  "Performance do Estudante",
     align: "center",
+    style: {
+      color: "#fdfdfd",
+    },
+  },
+  tooltip: {
+    theme: true,
+    fixed: true,
+  },
+  fill: {
+    opacity: 0.4,
+  },
+  legend: {
+    labels: {
+      colors: [ "#cdcdcd", "#cdcdcd", "#cdcdcd", "#cdcdcd", "#cdcdcd" ],
+    },
   },
 };
 </script>

@@ -4,14 +4,12 @@
 			Olá, {{ selectedStudents[0].name }}!
 			Esses gráficos mostram o seu desempenho e incidentes ao longo dos meses.
 		</p>
-		<div class="flex gap-8">
-			<UCard class="cardStyle">
-				<LineChart :chart-series="lineChartSeries" />
-			</Ucard>
-			<UCard class="cardStyle">
-				<BarChart :chart-series="chartSeries" />
-			</Ucard>
-		</div>
+		<UCard class="mb-8">
+			<LineChart :chart-series="lineChartSeries" />
+		</Ucard>
+		<UCard>
+			<BarChart :chart-series="chartSeries" />
+		</Ucard>
 	</div>
 </template>
 
@@ -51,10 +49,3 @@ const updateCharts = () =>
 
 updateCharts();
 </script>
-
-<style scoped>
-.cardStyle {
-  background-color: transparent;
-  flex: 1;
-}
-</style>
