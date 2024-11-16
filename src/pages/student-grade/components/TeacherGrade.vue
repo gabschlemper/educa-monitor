@@ -50,7 +50,7 @@
 
 <script setup>
 import { createCalendar, viewDay, viewMonthAgenda, viewMonthGrid } from "@schedule-x/calendar";
-import { gradeEvents } from "../mock"; // Mock data from /mock.js
+import { gradeEvents } from "../mock";
 import { ref } from "vue";
 import { ScheduleXCalendar } from "@schedule-x/vue";
 
