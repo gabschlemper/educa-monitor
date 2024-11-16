@@ -47,8 +47,8 @@ const navItems = [
     icon:  "i-heroicons-outline-bell-alert",
     to:    "/notifications",
   }, {
-    label: "Comportamento do Estudante",
+    label: "Grade Curricular",
     icon:  "i-heroicons-outline-document-text",
-    to:    "/student-behavior",
+    to:    "/student-grade",
   } ] ];
 </script>

@@ -30,9 +30,25 @@
 				</template>
 
 				<UForm class="flex flex-col gap-3" :state="newNotification">
-					<UInput id="studentName" v-model="newNotification.studentName" type="text" required />
-					<UTextarea id="description" v-model="newNotification.description" required />
-					<UInput id="date" v-model="newNotification.date" type="date" required />
+					<UInput
+						id="studentName"
+						v-model="newNotification.studentName"
+						placeholder="Nome do Estudante"
+						type="text"
+						required
+					/>
+					<UTextarea
+						id="description"
+						v-model="newNotification.description"
+						placeholder="Descrição da notificação"
+						required
+					/>
+					<UInput
+						id="date"
+						v-model="newNotification.date"
+						type="date"
+						required
+					/>
 					<!-- <USelect id="date" v-model="newNotification.type" :options=["warning", "info", ""] required /> -->
 				</UForm>
 				<template #footer>
@@ -58,11 +74,12 @@ const isModalOpen = ref(false);
 const q = ref("");
 const page = ref(1);
 const rowsPerPage = 10;
+const today = new Date();
 
 const newNotification = ref({
   studentName: "",
   description: "",
-  date:        "",
+  date:        today.toISOString().split("T")[0],
   type:        "",
 });
 
